@@ -2,15 +2,25 @@
 layout: default
 title: "Publications"
 permalink: /publications/
+paginate: true
 ---
 
 <h1>Publications</h1>
 
 <ul>
-  {% assign publications = site.publications | sort: 'n' | reverse %}
-  {% for publication in publications %}
+  {% for publication in paginator.posts %}
     <li>
       {% include pub.html %}
     </li>
   {% endfor %}
 </ul>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% endif %}
+  
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% endif %}
+</div>
