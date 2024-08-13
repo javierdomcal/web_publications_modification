@@ -1,0 +1,20 @@
+---
+layout: pub
+exturl: "https://chemistry-europe.onlinelibrary.wiley.com/doi/10.1002/chem.202300066"
+title: "Quest for the Most Aromatic Pathway in Charged Expanded Porphyrins"
+authors:
+ - Woller T.
+ - Casademont-Reig I.
+ - García V.
+ - Contreras-García J.
+ - Tiznado T.
+ - Torrent-Sucarrat M.
+ - Matito E.
+ - Alonso M.
+journal: Chem. Eur. J.
+year: 2023
+extra: 
+volume: 29
+pages: e202202264
+n: 2
+---

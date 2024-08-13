@@ -1,0 +1,16 @@
+---
+layout: pub
+exturl: "https://www.ncbi.nlm.nih.gov/pubmed/20485754"
+title: "Patterns of pi-electron delocalization in aromatic and antiaromatic organic compounds in the light of the Huckel's 4n+2 rule"
+authors:
+ - Feixas F.
+ - Matito E.
+ - Solà M.
+ - Poater J.
+journal: Phys. Chem. Chem. Phys
+year: 2010
+extra: 
+volume: 12
+pages: 7126
+n: 5
+---

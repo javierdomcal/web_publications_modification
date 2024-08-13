@@ -1,0 +1,18 @@
+---
+layout: pub
+exturl: "https://arxiv.org/abs/1712.01789"
+title: "The Coulomb Hole of the Ne Atom"
+authors:
+ - Rodríguez-Mayorga M.
+ - Ramos-Cordoba E.
+ - Lopez X.
+ - Solà M.
+ - Ugalde J. M.
+ - Matito E.
+journal: ChemistryOpen
+year: 2019
+extra: 
+volume: 8
+pages: 411
+n: 1
+---

@@ -1,0 +1,16 @@
+---
+layout: pub
+exturl: "https://aip.scitation.org/doi/abs/10.1063/1.4934799"
+title: "H4: A Challenging System For Natural Orbital Functional Approximations"
+authors:
+ - Ramos-Cordoba E.
+ - Lopez X.
+ - Piris M.
+ - Matito E.
+journal: J. Chem. Phys.
+year: 2015
+extra: 
+volume: 143
+pages: 164112
+n: 6
+---

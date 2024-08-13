@@ -1,0 +1,16 @@
+---
+layout: pub
+exturl: "https://pubs.rsc.org/en/Content/ArticleLanding/CP/2012/C2CP42210G#!divAbstract"
+title: "The Molecular Structures of M2N22- (M and N = B, Al, and Ga) Clusters Using the Gradient Embedded Genetic Algorithm: a Strategy Towards the Design of New Molecules"
+authors:
+ - Islas R.
+ - Poater J.
+ - Matito E.
+ - Solà M.
+journal: Phys. Chem. Chem. Phys.
+year: 2012
+extra: 
+volume: 14
+pages: 14850-14859
+n: 5
+---

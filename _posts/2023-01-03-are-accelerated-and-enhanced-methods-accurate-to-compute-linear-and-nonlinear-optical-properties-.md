@@ -1,0 +1,18 @@
+---
+layout: pub
+exturl: "https://doi.org/10.1021/acs.jctc.2c01212"
+title: "Are accelerated and Enhanced Methods Accurate to Compute Linear and Nonlinear Optical Properties?"
+authors:
+ - Naim C.
+ - Besalú-Sala P.
+ - Zalesny R.
+ - Luis J.M.
+ - Castet F.
+ - Matito E.
+journal: J. Chem. Theory Comput.
+year: 2023
+extra: 
+volume: 19
+pages: 1474
+n: 3
+---

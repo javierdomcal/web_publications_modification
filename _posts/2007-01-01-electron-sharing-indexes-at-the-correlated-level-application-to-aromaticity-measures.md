@@ -1,0 +1,16 @@
+---
+layout: pub
+exturl: "https://www.ncbi.nlm.nih.gov/pubmed/17328437"
+title: "Electron Sharing Indexes at the Correlated Level. Application to Aromaticity Measures"
+authors:
+ - Matito E.
+ - Solà M.
+ - Salvador P.
+ - Duran M.
+journal: Faraday Discuss
+year: 2007
+extra: 
+volume: 135
+pages: 325-345
+n: 1
+---

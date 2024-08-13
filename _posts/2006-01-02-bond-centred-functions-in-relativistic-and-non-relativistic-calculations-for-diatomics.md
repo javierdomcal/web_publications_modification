@@ -1,0 +1,15 @@
+---
+layout: pub
+exturl: "https://www.sciencedirect.com/science/article/abs/pii/S0301010405003733"
+title: "Bond centred functions in relativistic and non-relativistic calculations for diatomics"
+authors:
+ - Matito E.
+ - Kobus J.
+ - Styszynski J.
+journal: Chem. Phys.
+year: 2006
+extra: 
+volume: 321
+pages: 277-284
+n: 2
+---

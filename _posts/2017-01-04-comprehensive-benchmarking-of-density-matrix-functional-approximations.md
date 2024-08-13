@@ -1,0 +1,17 @@
+---
+layout: pub
+exturl: "https://pubs.rsc.org/en/content/articlelanding/2017/cp/c7cp03349d/unauth#!divAbstract"
+title: "Comprehensive benchmarking of density matrix functional approximations"
+authors:
+ - Rodriguez-Mayorga M.
+ - Ramos-Cordoba E.
+ - Via-Nadal M.
+ - Piris M.
+ - Matito E.
+journal: Phys. Chem. Chem. Phys.
+year: 2017
+extra: 
+volume: 19
+pages: 24029-24041
+n: 4
+---

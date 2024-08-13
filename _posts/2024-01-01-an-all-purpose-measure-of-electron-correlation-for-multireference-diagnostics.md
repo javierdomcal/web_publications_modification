@@ -1,0 +1,17 @@
+---
+layout: pub
+exturl: "https://pubs.acs.org/doi/10.1021/acs.jctc.3c01073"
+title: "An All-Purpose Measure of Electron Correlation for Multireference Diagnostics"
+authors:
+ - Xu X.
+ - Soriano-Agueda L.
+ - Lopez X.
+ - Ramos-Cordoba E.
+ - Matito E.
+journal: J. Chem. Theory Comput.
+year: 2024
+extra: 
+volume: 20
+pages: 721
+n: 1
+---

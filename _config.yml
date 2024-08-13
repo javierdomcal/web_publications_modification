@@ -3,20 +3,18 @@ description: "Página web de publicaciones de Javier Dominguez Calonge"
 baseurl: "/web_publications_modification" # El subdirectorio donde se publicará tu sitio
 url: "https://javierdomcal.github.io" # La URL base sin el subdirectorio
 
-# Configuración de la colección de publicaciones
+# Habilitar las publicaciones de blog
 collections:
-  publications:
+  posts:
     output: true
-    permalink: /publications/:path/
 
-# Configuración de plugins soportados por GitHub Pages
-plugins:
-  - jekyll-paginate
-
-# Paginación
+# Configuración de la paginación
 paginate: 10
 paginate_path: "/page:num/"
 
+# Plugins (si es necesario)
+plugins:
+  - jekyll-paginate
 
-# Tema de GitHub Pages
-theme: jekyll-theme-primer
+# Tema (cambia según lo que estés usando)
+theme: jekyll-theme-minimal

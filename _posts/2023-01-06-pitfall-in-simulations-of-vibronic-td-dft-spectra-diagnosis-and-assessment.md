@@ -1,0 +1,16 @@
+---
+layout: pub
+exturl: "https://doi.org/10.1039/D3CP04276F"
+title: "Pitfall in simulations of vibronic TD-DFT spectra: Diagnosis and assessment"
+authors:
+ - Sitkiewicz S.P.
+ - Matito E.
+ - Luis J.M.
+ - Zalesny R.
+journal: Phys. Chem. Chem. Phys.
+year: 2023
+extra: 
+volume: 25
+pages: 30193
+n: 6
+---

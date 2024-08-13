@@ -1,0 +1,17 @@
+---
+layout: pub
+exturl: "LMUY91YQh8cksoFYg5QgTQ889aimHdgcY1u691GY0o18lLmOWxrw7IS2Z7mWeIV_VkOknfjhmP_drvrhW_hkSx5DJB80UFxfk7rXv5iInCRW2fYy6N_IGzT6rZIC7LlpYOiiIeiUOSEfvBpfVQaNCTv1sYVQNloOXw6CYU77u3q4XSGesSfMVB3rRhHDOA8tU8DWAPlG_UWNCl4"
+title: "New approximation to the third-order density. Application to the calculation of correlated multicenter indices"
+authors:
+ - Feixas F.
+ - Solà M.
+ - Barroso J.M.
+ - Ugalde J.M.
+ - Matito E.
+journal: J. Chem. Theory Comput.
+year: 2014
+extra: 
+volume: 10
+pages: 3055-3065
+n: 3
+---
