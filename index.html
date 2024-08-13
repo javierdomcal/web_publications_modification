@@ -8,20 +8,24 @@ title: "Publications"
 <ul>
   {% assign publications = site.publications | sort: 'n' | reverse %}
   {% if publications.size > 0 %}
+    {% assign counter = 0 %}
     {% for publication in publications %}
-      <li>
-        <div class="publication-box">
-            <a href="{{ publication.exturl }}" target="_blank" class="publication-title">
-                <b>{{ publication.title }}</b>
-            </a><br>
-            <span class="publication-authors">
-                {{ publication.authors | join: ', ' }}
-            </span><br>
-            <span class="publication-details">
-                <i>{{ publication.journal }}</i>, <b>{{ publication.year }}</b>, <i>{{ publication.volume }}</i>, {{ publication.pages }}
-            </span>
-        </div>
-      </li>
+      {% if counter < 10 %}
+        <li>
+          <div class="publication-box">
+              <a href="{{ publication.exturl }}" target="_blank" class="publication-title">
+                  <b>{{ publication.title }}</b>
+              </a><br>
+              <span class="publication-authors">
+                  {{ publication.authors | join: ', ' }}
+              </span><br>
+              <span class="publication-details">
+                  <i>{{ publication.journal }}</i>, <b>{{ publication.year }}</b>, <i>{{ publication.volume }}</i>, {{ publication.pages }}
+              </span>
+          </div>
+        </li>
+        {% assign counter = counter | plus: 1 %}
+      {% endif %}
     {% endfor %}
   {% else %}
     <p>No publications available at the moment.</p>
