@@ -1,22 +1,19 @@
 ---
 layout: default
-title: Publications
+title: "Home"
 ---
 
-<h1>Publications</h1>
+<h1>Welcome to My Website</h1>
+<p>This is a site dedicated to showcasing our latest research and publications.</p>
+
+<h2>Latest Publications</h2>
 <ul>
-  {% assign sorted_publications = site.publications | sort: 'path' | reverse %}
-  {% for publication in sorted_publications %}
-    <li style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
-      <h2>{{ publication.title }}</h2>
-      <p><strong>Authors:</strong> {{ publication.authors | join: ", " }}</p>
-      <p><strong>Journal:</strong> {{ publication.journal }}</p>
-      <p><strong>Year:</strong> {{ publication.year }}</p>
-      <p><strong>Volume:</strong> {{ publication.volume }}</p>
-      <p><strong>Pages:</strong> {{ publication.pages }}</p>
-      {% if publication.exturl %}
-      <p><a href="{{ publication.exturl }}" target="_blank">Read the full publication</a></p>
-      {% endif %}
+  {% assign publications = site.publications | sort: 'n' | reverse %}
+  {% for publication in publications limit: 5 %}
+    <li>
+      {% include pub.html %}
     </li>
   {% endfor %}
 </ul>
+
+<a href="/publications/">See all publications</a>
