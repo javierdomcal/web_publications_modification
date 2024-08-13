@@ -1,29 +1,36 @@
 ---
 layout: default
 title: "Publications"
+paginate: true
 ---
 
 <h1>Publications</h1>
 
 <ul>
   {% assign publications = site.publications | sort: 'n' | reverse %}
-  {% if publications.size > 0 %}
-    {% for publication in publications %}
-      <li>
-        <div class="publication-box">
-            <a href="{{ publication.exturl }}" target="_blank" class="publication-title">
-                <b>{{ publication.title }}</b>
-            </a><br>
-            <span class="publication-authors">
-                {{ publication.authors | join: ', ' }}
-            </span><br>
-            <span class="publication-details">
-                <i>{{ publication.journal }}</i>, <b>{{ publication.year }}</b>, <i>{{ publication.volume }}</i>, {{ publication.pages }}
-            </span>
-        </div>
-      </li>
-    {% endfor %}
-  {% else %}
-    <p>No publications available at the moment.</p>
-  {% endif %}
+  {% for publication in paginator.posts %}
+    <li>
+      <div class="publication-box">
+          <a href="{{ publication.exturl }}" target="_blank" class="publication-title">
+              <b>{{ publication.title }}</b>
+          </a><br>
+          <span class="publication-authors">
+              {{ publication.authors | join: ', ' }}
+          </span><br>
+          <span class="publication-details">
+              <i>{{ publication.journal }}</i>, <b>{{ publication.year }}</b>, <i>{{ publication.volume }}</i>, {{ publication.pages }}
+          </span>
+      </div>
+    </li>
+  {% endfor %}
 </ul>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% endif %}
+  
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% endif %}
+</div>
