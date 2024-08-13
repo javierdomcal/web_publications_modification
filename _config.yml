@@ -9,18 +9,13 @@ collections:
     output: true
     permalink: /publications/:path/
 
+# Configuración de plugins soportados por GitHub Pages
 plugins:
-  - jekyll-paginate-v2
+  - jekyll-paginate
 
-paginate_v2:
-  enabled: true
-  per_page: 10
-  permalink: '/page/:num/'
-  title: ':title - page :num'
-  collection: 'publications'
-  sort_field: 'n'
-  sort_reverse: true
-
+# Paginación
+paginate: 10
+paginate_path: "/page:num/"
 
 
 # Tema de GitHub Pages
