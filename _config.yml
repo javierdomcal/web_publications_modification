@@ -2,8 +2,8 @@
 title: "Prueba de publicaciones"
 email: "javier.dom.cal@gmail.com"
 description: "Descripción breve de tu sitio"
-baseurl: "web_publications_modification" # El subdirectorio en el que se publicará tu sitio, por ejemplo /blog
-url: "https://javierdomcal.github.io/" # La URL base del sitio, cambiar si es necesario
+baseurl: "/web_publications_modification" # El subdirectorio en el que se publicará tu sitio, por ejemplo /blog
+url: "https://javierdomcal.github.io" # La URL base del sitio, cambiar si es necesario
 
 # Exclude files and directories from the site
 exclude:
