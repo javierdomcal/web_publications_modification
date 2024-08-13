@@ -15,7 +15,8 @@ plugins:
 
 # Paginación
 paginate: 10
-paginate_path: "/publications/page:num/"
+paginate_path: "/page:num/"
+
 
 # Tema de GitHub Pages
 theme: jekyll-theme-primer
