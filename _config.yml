@@ -1,0 +1,18 @@
+baseurl: ""
+url: "."
+markdown: kramdown
+theme: minima
+collections:
+  publications:
+    output: true
+    permalink: /publications/:path/
+plugins:
+  - jekyll-paginate-v2
+
+pagination:
+  enabled: true
+  per_page: 10
+  title: ':title'
+  permalink: '/page:num/'
+  sort_field: 'path'
+  sort_reverse: true
