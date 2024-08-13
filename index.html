@@ -1,23 +1,25 @@
 ---
 layout: default
-title: "Home"
+title: "Publications"
+paginate: 10
 ---
 
-<h1>Welcome to My Website</h1>
-<p>This is a site dedicated to showcasing our latest research and publications.</p>
+<h1>Publications</h1>
 
-<h2>Latest Publications</h2>
+<ul>
+  {% for publication in paginator.posts %}
+    <li>
+      {% include pub_item.html publication=publication %}
+    </li>
+  {% endfor %}
+</ul>
 
-{% assign publications = site.publications | sort: 'n' | reverse %}
-{% if publications.size > 0 %}
-  <ul>
-    {% for publication in publications limit: 5 %}
-      <li>
-        {% include pub_item.html publication=publication %}
-      </li>
-    {% endfor %}
-  </ul>
-  <a href="{{ site.baseurl }}/publications/">See all publications</a>
-{% else %}
-  <p>No publications available at the moment.</p>
-{% endif %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% endif %}
+  
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% endif %}
+</div>
