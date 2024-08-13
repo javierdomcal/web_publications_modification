@@ -1,52 +1,21 @@
-# Configuración básica del sitio
 title: "Publications of Javier Dominguez Calonge"
-email: "tucorreo@example.com"
 description: "Página web de publicaciones de Javier Dominguez Calonge"
 baseurl: "/web_publications_modification" # El subdirectorio donde se publicará tu sitio
 url: "https://javierdomcal.github.io" # La URL base sin el subdirectorio
 
-# Incluir la configuración de los plugins
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
-
-# Colección de publicaciones
+# Configuración de la colección de publicaciones
 collections:
   publications:
     output: true
     permalink: /publications/:path/
 
-# Paginación de publicaciones
+# Configuración de plugins soportados por GitHub Pages
+plugins:
+  - jekyll-paginate
+
+# Paginación
 paginate: 10
 paginate_path: "/publications/page:num/"
 
-# Configuraciones de Markdown y sintaxis
-markdown: kramdown
-highlighter: rouge
-
-# Configuraciones de salida
-permalink: pretty
-
-# Tema predeterminado
+# Tema de GitHub Pages
 theme: jekyll-theme-primer
-
-# Excluir archivos y directorios del sitio
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/
-
-# Metadata de GitHub Pages
-github:
-  is_project_page: true
-
-# Configuraciones para SEO
-jekyll_seo_tag:
-  social:
-    name: "Javier Dominguez Calonge"
-    image: "/assets/images/your-image.jpg" # Cambia esto según sea necesario
-    twitter: "your-twitter-handle"
-    facebook: "your-facebook-page"
