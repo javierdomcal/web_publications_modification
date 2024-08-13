@@ -1,16 +1,9 @@
 # Configuración básica del sitio
-title: "Prueba de publicaciones"
-email: "javier.dom.cal@gmail.com"
-description: "Descripción breve de tu sitio"
-baseurl: "/web_publications_modification" # El subdirectorio en el que se publicará tu sitio, por ejemplo /blog
-url: "https://javierdomcal.github.io" # La URL base del sitio, cambiar si es necesario
-
-# Exclude files and directories from the site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/
+title: "Publications of Javier Dominguez Calonge"
+email: "tucorreo@example.com"
+description: "Página web de publicaciones de Javier Dominguez Calonge"
+baseurl: "/web_publications_modification" # El subdirectorio donde se publicará tu sitio
+url: "https://javierdomcal.github.io" # La URL base sin el subdirectorio
 
 # Incluir la configuración de los plugins
 plugins:
@@ -19,11 +12,17 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# Colección de publicaciones
+collections:
+  publications:
+    output: true
+    permalink: /publications/:path/
+
 # Paginación de publicaciones
 paginate: 10
 paginate_path: "/publications/page:num/"
 
-# Configuraciones de Markdown
+# Configuraciones de Markdown y sintaxis
 markdown: kramdown
 highlighter: rouge
 
@@ -33,6 +32,21 @@ permalink: pretty
 # Tema predeterminado
 theme: jekyll-theme-primer
 
-# Metadata de GitHub
+# Excluir archivos y directorios del sitio
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+
+# Metadata de GitHub Pages
 github:
   is_project_page: true
+
+# Configuraciones para SEO
+jekyll_seo_tag:
+  social:
+    name: "Javier Dominguez Calonge"
+    image: "/assets/images/your-image.jpg" # Cambia esto según sea necesario
+    twitter: "your-twitter-handle"
+    facebook: "your-facebook-page"
