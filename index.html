@@ -10,7 +10,9 @@ title: "Publications"
   {% if publications.size > 0 %}
     {% for publication in publications %}
       <li>
-        {% include pub_item.html publication=publication %}
+        <a href="{{ publication.exturl }}" target="_blank">
+          <b>{{ publication.title }}</b>
+        </a>
       </li>
     {% endfor %}
   {% else %}
