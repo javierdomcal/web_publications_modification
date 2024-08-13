@@ -7,13 +7,17 @@ title: "Home"
 <p>This is a site dedicated to showcasing our latest research and publications.</p>
 
 <h2>Latest Publications</h2>
-<ul>
-  {% assign publications = site.publications | sort: 'n' | reverse %}
-  {% for publication in publications limit: 5 %}
-    <li>
-      {% include pub.html %}
-    </li>
-  {% endfor %}
-</ul>
 
-<a href="/publications/">See all publications</a>
+{% assign publications = site.publications | sort: 'n' | reverse %}
+{% if publications %}
+  <ul>
+    {% for publication in publications limit: 5 %}
+      <li>
+        {% include pub_item.html publication=publication %}
+      </li>
+    {% endfor %}
+  </ul>
+  <a href="/publications/">See all publications</a>
+{% else %}
+  <p>No publications available at the moment.</p>
+{% endif %}
