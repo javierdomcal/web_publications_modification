@@ -1,13 +1,11 @@
----
-layout: default
----
-
-<h1>{{ page.title }}</h1>
-<p><strong>Authors:</strong> {{ page.authors | join: ", " }}</p>
-<p><strong>Journal:</strong> {{ page.journal }}</p>
-<p><strong>Year:</strong> {{ page.year }}</p>
-<p><strong>Volume:</strong> {{ page.volume }}</p>
-<p><strong>Pages:</strong> {{ page.pages }}</p>
-{% if page.exturl %}
-<p><a href="{{ page.exturl }}" target="_blank">Read the full publication</a></p>
-{% endif %}
+<div class="publication-box">
+    <a href="{{ page.exturl }}" target="_blank" class="publication-title">
+        <b>{{ page.title }}</b>
+    </a><br>
+    <span class="publication-authors">
+        {{ page.authors | join: ', ' }}
+    </span><br>
+    <span class="publication-details">
+        <i>{{ page.journal }}</i>, <b>{{ page.year }}</b>, <i>{{ page.volume }}</i>, {{ page.pages }}
+    </span>
+</div>
