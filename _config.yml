@@ -14,8 +14,8 @@ plugins:
   - jekyll-paginate
 
 # Paginación
-paginate: 10
-paginate_path: "/page:num/"
+#paginate: 10
+#paginate_path: "/page:num/"
 
 
 # Tema de GitHub Pages
