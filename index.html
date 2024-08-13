@@ -9,7 +9,7 @@ title: "Home"
 <h2>Latest Publications</h2>
 
 {% assign publications = site.publications | sort: 'n' | reverse %}
-{% if publications %}
+{% if publications.size > 0 %}
   <ul>
     {% for publication in publications limit: 5 %}
       <li>
@@ -17,7 +17,7 @@ title: "Home"
       </li>
     {% endfor %}
   </ul>
-  <a href="/publications/">See all publications</a>
+  <a href="{{ site.baseurl }}/publications/">See all publications</a>
 {% else %}
   <p>No publications available at the moment.</p>
 {% endif %}
