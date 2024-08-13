@@ -1,25 +1,19 @@
 ---
 layout: default
 title: "Publications"
-paginate: true
 ---
 
 <h1>Publications</h1>
 
 <ul>
-  {% for publication in paginator.posts %}
-    <li>
-      {% include pub_item.html publication=publication %}
-    </li>
-  {% endfor %}
+  {% assign publications = site.publications | sort: 'n' | reverse %}
+  {% if publications.size > 0 %}
+    {% for publication in publications %}
+      <li>
+        {% include pub_item.html publication=publication %}
+      </li>
+    {% endfor %}
+  {% else %}
+    <p>No publications available at the moment.</p>
+  {% endif %}
 </ul>
-
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-  {% endif %}
-  
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% endif %}
-</div>
