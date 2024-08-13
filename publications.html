@@ -1,0 +1,16 @@
+---
+layout: default
+title: "Publications"
+permalink: /publications/
+---
+
+<h1>Publications</h1>
+
+<ul>
+  {% assign publications = site.publications | sort: 'n' | reverse %}
+  {% for publication in publications %}
+    <li>
+      {% include pub.html %}
+    </li>
+  {% endfor %}
+</ul>
